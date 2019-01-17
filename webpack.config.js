@@ -9,7 +9,8 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.ts$/, use: "ts-loader" }
+            { test: /\.js$/, use: "babel-loader" },
+            { test: /\.ts$/, use: "ts-loader" },
         ]
     },
     resolve: {
