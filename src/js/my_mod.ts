@@ -1,3 +1,5 @@
+import 'request'
+
 export default class MyMod {
   message(): string {
     return 'hello'
@@ -15,5 +17,9 @@ export default class MyMod {
     }
 
     return parseFloat(res)
+  }
+
+  fetch(url: string): string {
+    return 'a'
   }
 }
