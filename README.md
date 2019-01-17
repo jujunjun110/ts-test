@@ -1,6 +1,8 @@
 # TS Test
-typescriptのプロジェクトの雛形
+typescriptを触ってみるためのプロジェクト
 - webpack
-- webpack-dev-server
-- test(mocha)
-あたりまで設定してみた
+- hot reload server
+- testing
+- tslint
+- null安全
+あたりまで設定・確認してみた。便利そう。
