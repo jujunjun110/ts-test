@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "tslint": "^5.12.1",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
@@ -23,6 +24,8 @@
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "ts-loader": "^5.3.3",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.1",
     "typescript": "^3.2.2"
   }
 }

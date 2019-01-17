@@ -1,0 +1,5 @@
+{
+    "editor.formatOnSave": false,
+    "tslint.alwaysShowStatus": true,
+    "tslint.autoFixOnSave": true
+}

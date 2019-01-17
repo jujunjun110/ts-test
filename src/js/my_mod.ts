@@ -1,5 +1,5 @@
 export default class MyMod {
-    message(): string {
-        return "hello"
-    }
+  message (): string {
+    return 'hello'
+  }
 }
