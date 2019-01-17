@@ -13,6 +13,12 @@
                 "singleQuote": true,
                 "semi": false
             }
-        ]
+        ],
+        "await-promise": false,
+        "deprecation": false,
+        "no-floating-promises": false,
+        "no-unnecessary-qualifier": false,
+        "no-unnecessary-type-assertion": false,
+        "strict-type-predicates": false
     }
 }
