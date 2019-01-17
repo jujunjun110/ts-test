@@ -13,7 +13,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.ts', '.tsx', ".js", ".json"]
+        extensions: ['.ts', ".js"]
     },
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
