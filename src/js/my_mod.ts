@@ -19,7 +19,7 @@ export default class MyMod {
 
   async fetch_url(url: string): Promise<string | null> {
     try {
-      const res = await fetch('./index.html')
+      const res = await fetch(url)
       return res.text()
     } catch (_) {
       return null
