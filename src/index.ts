@@ -1,4 +1,4 @@
-import MyMod from "./js/my_mod";
+import MyMod from './js/my_mod'
 
 console.log(123)
 
