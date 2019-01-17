@@ -1,5 +1,3 @@
-import 'request'
-
 export default class MyMod {
   message(): string {
     return 'hello'
@@ -11,15 +9,14 @@ export default class MyMod {
         return '0123456789'.indexOf(char) !== -1
       })
       .join('')
-
     if (res.length === 0) {
       return null
     }
-
     return parseFloat(res)
   }
 
-  fetch(url: string): string {
-    return 'a'
+  async fetch_url(url: string) {
+    const res = await fetch('./index.html')
+    return res.text
   }
 }
