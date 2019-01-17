@@ -11,10 +11,11 @@ module.exports = {
         rules: [
             { test: /\.js$/, use: "babel-loader" },
             { test: /\.ts$/, use: "ts-loader" },
+            { test: /\.scss$/, use: ["style-loader", "css-loader", "sass-loader"] },
         ]
     },
     resolve: {
-        extensions: ['.ts', ".js"]
+        extensions: ['.ts', ".js", "scss"]
     },
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
