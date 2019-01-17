@@ -19,6 +19,7 @@
         "no-floating-promises": false,
         "no-unnecessary-qualifier": false,
         "no-unnecessary-type-assertion": false,
-        "strict-type-predicates": false
+        "strict-type-predicates": false,
+        "eofline": true
     }
 }
