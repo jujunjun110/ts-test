@@ -1,12 +1,14 @@
 export default class MyMod {
-  message (): string {
+  message(): string {
     return 'hello'
   }
 
-  extract_number (text: string): number | null {
-    const res = Array.prototype.filter.call(text, (char: string) => {
-      return '0123456789'.indexOf(char) !== -1
-    }).join('')
+  extract_number(text: string): number | null {
+    const res = Array.prototype.filter
+      .call(text, (char: string) => {
+        return '0123456789'.indexOf(char) !== -1
+      })
+      .join('')
 
     if (res.length === 0) {
       return null
