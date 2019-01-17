@@ -9,7 +9,7 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.ts$/, use: ["ts-loader", "babel-loader"] },
+            { test: /\.ts$/, use: ["babel-loader", "ts-loader"] },
             { test: /\.scss$/, use: ["style-loader", "css-loader", "sass-loader"] },
         ]
     },
