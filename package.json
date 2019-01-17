@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot"
+    "dev": "webpack-dev-server --hot",
+    "test": "tsc && mocha ./test/*test.js"
   },
   "author": "",
   "license": "ISC",
