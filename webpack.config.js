@@ -2,10 +2,18 @@ const path = require('path')
 
 module.exports = {
     mode: "development",
-    entry: path.resolve(__dirname, "src/index.js"),
+    entry: path.resolve(__dirname, "src/index.ts"),
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js"
+    },
+    module: {
+        rules: [
+            { test: /\.ts$/, use: "ts-loader" }
+        ]
+    },
+    resolve: {
+        extensions: ['.ts', '.tsx', ".js", ".json"]
     },
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
