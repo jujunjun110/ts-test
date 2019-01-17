@@ -9,9 +9,11 @@ export default class MyMod {
         return '0123456789'.indexOf(char) !== -1
       })
       .join('')
+
     if (res.length === 0) {
       return null
     }
+
     return parseFloat(res)
   }
 
