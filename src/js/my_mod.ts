@@ -4,17 +4,13 @@ export default class MyMod {
   }
 
   extract_number(text: string): number | null {
-    const res = Array.prototype.filter
-      .call(text, (char: string) => {
-        return '0123456789'.indexOf(char) !== -1
-      })
-      .join('')
+    const res = text.match(/\d{1}/g)
 
-    if (res.length === 0) {
+    if (res == null) {
       return null
     }
 
-    return parseFloat(res)
+    return parseFloat(res.join(''))
   }
 
   async fetch_url(url: string): Promise<string | null> {
