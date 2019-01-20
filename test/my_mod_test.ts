@@ -29,7 +29,7 @@ describe('MyMod Instance', () => {
     ]
 
     for (const c of cases) {
-      const actual = m.fib(c.case)
+      const actual = m.fib2(c.case)
       assert.equal(actual, c.expected)
     }
   })
