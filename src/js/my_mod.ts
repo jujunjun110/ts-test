@@ -4,17 +4,8 @@ export default class MyMod {
   }
 
   extract_number(text: string): number | null {
-    const res = Array.prototype.filter
-      .call(text, (char: string) => {
-        return '0123456789'.indexOf(char) !== -1
-      })
-      .join('')
-
-    if (res.length === 0) {
-      return null
-    }
-
-    return parseFloat(res)
+    const res = text.match(/\d{1}/g)
+    return (res === null) ? null : parseFloat(res.join(""))
   }
 
   fib(num: number): number {
