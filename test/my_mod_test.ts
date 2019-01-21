@@ -26,6 +26,7 @@ describe('MyMod Instance', () => {
       { case: 1, expected: 1 },
       { case: 2, expected: 1 },
       { case: 10, expected: 55 },
+      { case: 100, expected: 354224848179262015075 },
     ]
 
     for (const c of cases) {
