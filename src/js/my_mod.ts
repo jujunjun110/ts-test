@@ -14,4 +14,19 @@ export default class MyMod {
     }
     return fib_inner(num, 0, 1)
   }
+
+  fib2(num: number): number {
+    const fib_array: Array<number> = []
+    let a = 0
+    let b = 1
+    let tmp: number
+
+    for (let i = 0; i <= num; i++) {
+      fib_array.push(a)
+      tmp = b
+      b = a + b
+      a = tmp
+    }
+    return fib_array[num]
+  }
 }
