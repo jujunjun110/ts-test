@@ -11,7 +11,7 @@
             true,
             {
                 "singleQuote": true,
-                "semi": false,
+                "semi": false
             }
         ],
         "await-promise": false,
@@ -20,6 +20,15 @@
         "no-unnecessary-qualifier": false,
         "no-unnecessary-type-assertion": false,
         "strict-type-predicates": false,
-        "eofline": true
+        "eofline": true,
+        "typedef": [
+            true,
+            "call-signature",
+            "arrow-call-signatue",
+            "parameter",
+            "member-variable-declaration",
+            "object-destructuring",
+            "array-destructuring"
+        ]
     }
 }
