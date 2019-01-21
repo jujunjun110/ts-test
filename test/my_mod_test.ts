@@ -20,4 +20,16 @@ describe('MyMod Instance', () => {
       assert.equal(actual, c.expected)
     }
   })
+
+  it("calculate fib number", () => {
+    const cases = [
+      { case: 1, expected: 1 },
+      { case: 2, expected: 1 },
+      { case: 10, expected: 55 },
+    ]
+
+    for (const c of cases) {
+      assert.equal(m.fib(c.case), c.expected)
+    }
+  })
 })

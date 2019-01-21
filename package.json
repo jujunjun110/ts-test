@@ -40,8 +40,7 @@
   },
   "nyc": {
     "include": [
-      "src/*.ts",
-      "src/**/*.ts"
+      "src/js/*.ts"
     ],
     "extension": [
       ".ts"
