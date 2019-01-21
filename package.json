@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --hot",
+    "dist": "webpack --mode=production",
     "test": "mocha --recursive --require ts-node/register \"test/**/*.ts\"",
     "cover": "nyc npm t"
   },
