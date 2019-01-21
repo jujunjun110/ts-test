@@ -16,13 +16,4 @@ export default class MyMod {
 
     return parseFloat(res)
   }
-
-  async fetch_url(url: string): Promise<string | null> {
-    try {
-      const res = await fetch(url)
-      return res.text()
-    } catch (_) {
-      return null
-    }
-  }
 }
